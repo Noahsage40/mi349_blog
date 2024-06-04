@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Blog - Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <!-- Your navigation menu here -->
+        <h1>Welcome to Noah Sage's Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Blog Post 1 -->
-    <article>
-        <h2>Blog Post Title 1</h2>
-        <p>Content goes here...</p>
-        <img src="your-image-url.jpg" alt="Blog Post Image">
-        <p>Published on: [Date]</p>
-        <p>Author: Noah Sage</p>
-        <!-- Table with tabular data -->
-    </article>
-
-    <!-- Blog Post 2 -->
-    <article>
-        <!-- Similar structure for the second blog post -->
-    </article>
-
-    <!-- Email Newsletter Signup Form -->
-    <form>
-        <!-- Form fields (name, email, reason, comments) -->
-        <button type="submit">Subscribe</button>
-    </form>
+    <main>
+        <article>
+            <h2>My Journey in Track and Field</h2>
+            <p><time datetime="2024-06-04">June 4, 2024</time> by <span>Noah Sage</span></p>
+            <img src="images/original-379BAA67-2D73-43AE-91BD-801FBE25E73A.jpeg" alt="Track and Field" style="max-width:100%;height:auto;">
+            <p>Hello! My name is Noah Sage, an incoming senior at Michigan State University majoring in Information Science. As a dedicated member of the track and field team, I have spent countless hours training and competing in various events...</p>
+            <h3>Training Schedule for Sprinters</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Event</th>
+                        <th>Best Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>James stein</td>
+                        <td>100m</td>
+                        <td>10.2s</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>200m</td>
+                        <td>22.5s</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Johnson</td>
+                        <td>400m</td>
+                        <td>46.1s</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h2>The Importance of Data in Sports</h2>
+            <p><time datetime="2024-06-01">June 1, 2024</time> by <span>Noah Sage</span></p>
+            <img src="images/1701778248772.png" alt="Data in Sports" style="max-width:100%;height:auto;">
+            <p>As an Information Science major, I understand the importance of data in sports. The ability to analyze performance metrics and use this data to improve training and prevent injuries is amazing.</p>
+        </article>
+        <section>
+            <h2>Sign up for our newsletter</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Noah Sage. All rights reserved.</p>
+    </footer>
 </body>
 </html>
