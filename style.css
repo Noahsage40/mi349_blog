@@ -5,3 +5,10 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+
+}
