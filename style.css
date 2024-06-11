@@ -18,3 +18,11 @@ border: 1px solid #ddd;
 padding: 8px;
 text-align: left;
 }
+
+article {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
