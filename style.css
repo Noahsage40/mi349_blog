@@ -1,3 +1,4 @@
+/* Type Selectros */
 body {
     font-family: Arial; 
     line-height: 1.6;
@@ -36,3 +37,7 @@ h2 {
     color: #333;
 }
 
+/* Class Selector */
+.highlight {
+    background-color: green;
+}
