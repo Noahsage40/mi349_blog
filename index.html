@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <h1>Welcome to Noah Sage's Blog</h1>
         <nav>
             <ul>
@@ -17,11 +17,11 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="two-column-layout">
         <article>
             <h2>My Track and Field Journey</h2>
             <p><time datetime="2024-06-04">June 4, 2024</time> by <span>Noah Sage</span></p>
-            <img src="images/original-379BAA67-2D73-43AE-91BD-801FBE25E73A.jpeg" alt="Track and Field" style="width: 512px;;height:100% auto;">
+            <img src="images/original-379BAA67-2D73-43AE-91BD-801FBE25E73A.jpeg" alt="Track and Field" style="width: 512px; height: 100% auto;">
             <p>Hello! My name is Noah Sage, an incoming senior at Michigan State University majoring in Information Science. 
                 As a member of the track and field team, I have spent hours on end training and competing my hardest. 
                 Here, I share all of my experiences and thoughts from being a D1 athlete.</p>
@@ -75,30 +75,34 @@
             <p>Training and practice are crucial for achieving peak performance. As sprinters, 
                 we focus on building speed, strength, and endurance through a variety of drills
                 and exercises. Stay tuned for more updates on training plans and other things such as nutrition!</p>
-                <table>
-                  <tr>
+            <table>
+                <tr>
                     <th>Time</th>
                     <th>Sprinter</th>
-                  </tr> 
-                  <tr>
+                </tr> 
+                <tr>
                     <td>19.19s</td>
-                    <td>Usain bolt</td>
-                  </tr>
-                  <tr>
+                    <td>Usain Bolt</td>
+                </tr>
+                <tr>
                     <td>9.68s</td>
                     <td>Usain Bolt</td>
-                  <tr>
-                <table>
-        <article>
+                </tr>
+            </table>
+        </article>
+        <aside>
+            <h2>About Me</h2>
+            <p>Hello! I'm Noah Sage, a student-athlete at Michigan State University. I run track and field, and I love sharing my journey and tips for fellow athletes.</p>
+        </aside>
         <article>
             <h2>The Impact of Anxiety on Sports Performance</h2>
             <p><time datetime="2024-06-01">June 1, 2024</time> by <span>Noah Sage</span></p>
-            <img src="images/unnamed-2.jpg" alt="Anxiety in Sports" style="max-width:100%;height:auto;">
+            <img src="images/unnamed-2.jpg" alt="Anxiety in Sports" style="max-width:100%; height:auto;">
             <p>Sports performance can be significantly affected by anxiety. As athletes, we often 
                 face lots of pressure to perform well, which can lead to anxiety and stress causing us to not compete at our best. 
                 This anxiety can affect us in many ways, such as physical symptoms like 
-                increased heart rate and fatigued before competing, as well as mental symptoms such as negative 
-                thinking and lack of focus, or even feeling you are not phsyically present.</p>
+                increased heart rate and fatigue before competing, as well as mental symptoms such as negative 
+                thinking and lack of focus, or even feeling you are not physically present.</p>
             <p>Understanding how to manage anxiety is essential for athletes. Techniques such as deep breathing, 
                 visualization, and positive self-talk can help mitigate the effects of anxiety. It's also important 
                 to maintain a healthy lifestyle, including proper nutrition and adequate sleep, to support overall well-being 
@@ -109,7 +113,7 @@
         </article>
         <section>
             <h2>Sign up for our newsletter</h2>
-            <form>
+            <form class="multi-column-form">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <input type="submit" value="Subscribe">
