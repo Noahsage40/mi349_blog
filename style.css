@@ -1,4 +1,4 @@
-/* Type Selectros */
+/* Type Selectors */
 body {
     font-family: Arial; 
     line-height: 1.6;
@@ -11,40 +11,43 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px;
-
 }
 
 table td {
-border: 1px solid #ddd;
-padding: 8px;
-text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
 article {
-    font-family: Arial; 
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     margin: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
-main section
-h2 {
-    font-family: Arial; 
-    line-height: 1.6;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID Selector */
+#main-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 /* Attribute Selector */
-a[target] {
-    background-color: rgb(35, 237, 96);
-  }
+a[target="_blank"] {
+    color: red;
+    text-decoration: none;
+}
 
-/* Class Selectors */
-
-h1, h2, h3 {
+/* Header Styles */
+h1, h2, h3, h4, h5, h6 {
     font-family: Arial; 
     line-height: 1.6;
     margin: 0;
@@ -70,7 +73,7 @@ h1, h2, h3 {
     gap: 20px;
 }
 
-.two-column-layout article {
+.two-column-layout section {
     flex: 3;
 }
 
@@ -78,22 +81,4 @@ h1, h2, h3 {
     flex: 1;
     background-color: #eee;
     padding: 10px;
-}
-
-/* Multi-column Form Layout */
-.multi-column-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.multi-column-form label,
-.multi-column-form input[type="email"],
-.multi-column-form input[type="submit"] {
-    flex: 1 1 100%;
-    margin: 5px 0;
-}
-
-.multi-column-form input[type="submit"] {
-    flex: 1 1 auto;
 }
