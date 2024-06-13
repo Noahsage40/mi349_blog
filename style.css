@@ -21,7 +21,7 @@ text-align: left;
 }
 
 article {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial; 
     line-height: 1.6;
     margin: 0;
     background-color: #f4f4f4;
@@ -37,7 +37,63 @@ h2 {
     color: #333;
 }
 
-/* Class Selector */
-.highlight {
-    background-color: green;
+/* Attribute Selector */
+a[target] {
+    background-color: rgb(35, 237, 96);
+  }
+
+/* Class Selectors */
+
+h1, h2, h3 {
+    font-family: Arial; 
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Sticky Navigation Header */
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+/* Two Column Flexbox Layout */
+.two-column-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.two-column-layout article {
+    flex: 3;
+}
+
+.two-column-layout aside {
+    flex: 1;
+    background-color: #eee;
+    padding: 10px;
+}
+
+/* Multi-column Form Layout */
+.multi-column-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.multi-column-form label,
+.multi-column-form input[type="email"],
+.multi-column-form input[type="submit"] {
+    flex: 1 1 100%;
+    margin: 5px 0;
+}
+
+.multi-column-form input[type="submit"] {
+    flex: 1 1 auto;
 }
