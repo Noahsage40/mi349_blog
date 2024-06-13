@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <h1>Contact Noah Sage</h1>
         <nav>
             <ul>
@@ -18,26 +18,32 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="form-section">
             <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="reason">Reason for contact:</label>
-                <select id="reason" name="reason">
-                    <option value="hi">Interested in training</option>
-                    <option value="contractor">Learn more about you</option>
-                    <option value="interview">set up a one on one meeting</option>
-                </select>
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-                <br>
-                <input type="submit" value="Submit">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for contact:</label>
+                    <select id="reason" name="reason">
+                        <option value="training">Interested in training</option>
+                        <option value="learn">Learn more about you</option>
+                        <option value="meeting">Set up a one-on-one meeting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                </div>
+                <div class="form-group form-group-full">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </section>
     </main>
