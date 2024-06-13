@@ -10,7 +10,7 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 table td {
@@ -19,20 +19,12 @@ table td {
     text-align: left;
 }
 
-article {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.6;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Class Selector */
+/* Class Selectors */
 .highlight {
     background-color: yellow;
 }
 
-/* ID Selector */
+/* ID Selectors */
 #main-header {
     background-color: #333;
     color: white;
@@ -40,7 +32,7 @@ article {
     text-align: center;
 }
 
-/* Attribute Selector */
+/* Attribute Selectors */
 a[target="_blank"] {
     color: red;
     text-decoration: none;
@@ -65,3 +57,49 @@ h1, h2, h3 {
     padding: 10px;
     z-index: 1000;
 }
+
+/* Two Column Flexbox Layout */
+.two-column-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.two-column-layout .content {
+    flex: 2;
+}
+
+.two-column-layout aside {
+    flex: 1;
+    background-color: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Three Column Flexbox Layout */
+.three-column-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.three-column-layout .sidebar {
+    flex: 1;
+    background-color: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.three-column-layout .main-content {
+    flex: 2;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.multi-column-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
